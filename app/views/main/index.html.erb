@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-6">
+    <%= fa_icon "facebook-official 4x", class: "text-info pull-left" %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <%= link_to web_dev_path do %>    <h2 class="text-center big white">Web Development</h2><% end %>
+    <%= render "main/web_slideshow" %>
+  
+    <%= link_to tshirts_path do %>    <h2 class="text-center big white">T-shirt Design</h2><% end %>
+    <%= render "main/tshirt_slideshow" %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <h2 class="white big text-right"><%= link_to "View Resume", resume_path, class: "white" %></h2>
+    <%= link_to "Random", life_path, class: "#{params[:action] == "life" ? "active" : ""}" %>
+    <%= render "main/life_slideshow" %>
+    <h1>Random <3</h1>
+    <div class="col-md-6">
+      <%= image_tag("hustle.jpg", class: "img-responsive rounded") %>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag("reason.jpg", class: "img-responsive") %>
+    </div>
+  </div>
+  
+</div>
