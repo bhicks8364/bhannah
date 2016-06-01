@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   get 'portfolio' => 'portfolio#index'
   get 'tshirts' => 'portfolio#tshirts'
   get 'web-dev' => 'portfolio#web_sites'
-  root 'main#index'
   get 'about' => 'main#about'
   get 'resume' => 'main#resume'
   get 'life' => 'main#life'
