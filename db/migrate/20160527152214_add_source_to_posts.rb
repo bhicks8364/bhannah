@@ -1,4 +1,4 @@
-class AddSourceToPosts < ActiveRecord::Migration[5.0]
+class AddSourceToPosts < ActiveRecord::Migration
   def change
     add_column :posts, :source_url, :string
   end
