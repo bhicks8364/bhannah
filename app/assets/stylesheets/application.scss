@@ -134,7 +134,7 @@ div.card {
     // margin: 30px;
 }
 .big {
-    font-size: 2em;
+    font-size: 3em;
 }
 .bg-dream {
     background: url(Dream-Catcher-Sunset.jpg) no-repeat center center fixed; 
@@ -158,6 +158,23 @@ div.card {
 .bg-black {
     background-color: rgba(0, 0, 0, 0.95);
 }
+.bg-clear {
+    background-color: transparent!important;
+}
 .middle {
     margin: auto;
+}
+.main-btn {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    &:visited {
+        color: white;
+    }
+    &:hover {
+        color: rgba(255, 255, 255, 0.2);
+        -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    }
 }

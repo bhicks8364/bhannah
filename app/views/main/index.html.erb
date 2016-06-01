@@ -1,24 +1,21 @@
-<div class="row">
-  <div class="col-md-6">
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <%= link_to web_dev_path do %>    <h2 class="text-center big white">Web Development</h2><% end %>
-    <%= render "main/web_slideshow" %>
-  
-    <%= link_to tshirts_path do %>    <h2 class="text-center big white">T-shirt Design</h2><% end %>
-    <%= render "main/tshirt_slideshow" %>
-  </div>
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-    <h1>Random <3</h1>
-    <div class="col-md-6">
-      <%= image_tag("hustle.jpg", class: "img-responsive rounded") %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 darkbox shadow">
+     <h2 class="text-center big"> <%= link_to web_dev_path, class: "main-btn" do %>    Web Development<% end %></h2>
+      <%= link_to tshirts_path, class: "main-btn" do %>   T-shirt Design<% end %>
     </div>
-    <div class="col-md-6">
-      <%= image_tag("reason.jpg", class: "img-responsive") %>
+    <div class="col-md-6 bg-clear"></div>
+    <div class="col-md-6 darkbox shadow">
+      <h1>Random <3</h1>
+      <div class="col-md-6 hide-this">
+        <%= image_tag("bacon-quote-8.jpg", class: "img-responsive rounded") %>
+        <%= image_tag("first-of-all.jpg", class: "img-responsive rounded") %>
+        <%= image_tag("hustle.jpg", class: "img-responsive rounded") %>
+      </div>
+      <div class="col-md-6">
+        <%= image_tag("reason.jpg", class: "img-responsive rounded") %>
+      </div>
     </div>
+    
   </div>
-  
 </div>
