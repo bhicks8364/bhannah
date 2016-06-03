@@ -1,21 +1,19 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-6 darkbox shadow">
-     <h2 class="text-center big"> <%= link_to web_dev_path, class: "main-btn" do %>    Web Development<% end %></h2>
-      <%= link_to tshirts_path, class: "main-btn" do %>   T-shirt Design<% end %>
+    <div class="col-md-4 bg-clear">
+      <%= link_to "Resume", resume_path, class: "btn btn-default btn-lg btn-block" %>
     </div>
-    <div class="col-md-6 bg-clear"></div>
-    <div class="col-md-6 darkbox shadow">
-      <h1>Random <3</h1>
-      <div class="col-md-6 hide-this">
-        <%= image_tag("bacon-quote-8.jpg", class: "img-responsive rounded") %>
-        <%= image_tag("first-of-all.jpg", class: "img-responsive rounded") %>
-        <%= image_tag("hustle.jpg", class: "img-responsive rounded") %>
-      </div>
-      <div class="col-md-6">
-        <%= image_tag("reason.jpg", class: "img-responsive rounded") %>
-      </div>
+    <div class="col-md-4 bg-clear"><%= link_to "Web Development", web_dev_path, class: "btn btn-default btn-lg btn-block"  %></div>
+    <div class="col-md-4 bg-clear">
+      
     </div>
     
   </div>
-</div>
+  
+  <div class="row">
+      <div class="col-md-4 bg-clear">
+        
+      </div>
+      <div class="col-md-4 bg-clear"></div>
+      <div class="col-md-4 bg-clear"><%= render "life_slideshow" %></div>
+  </div>
