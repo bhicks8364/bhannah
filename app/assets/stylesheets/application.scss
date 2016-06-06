@@ -146,8 +146,16 @@ div.card {
     min-height: 300px;
     margin-left: -20px;
     margin-right: -20px;
-    // padding: 20px;
-    
+}
+.bg-books {
+    background: url(bg_books.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 300px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 .well {
     background-color: rgba(255, 255, 255, 0.4);
@@ -180,4 +188,14 @@ div.card {
 .img-center {
     display:block;
     margin:auto;
+}
+.In-widget {
+    width: 200px;
+}
+.school-logo-box {
+    height: 100px;
+}
+.mainpage {
+    margin-top: 30px;
+    padding-top: 30px;
 }
