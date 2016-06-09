@@ -63,10 +63,10 @@ a {
     text-decoration: none;
 }
 a:visited {
-    color: rgba(0,0,0,0.5);
+    // color: rgba(0,0,0,0.5);
 }
 a:hover {
-    font-weight: bold;
+    // font-weight: bold;
     text-decoration: none;
     // color: rgb(51, 122, 183);
 }
@@ -128,7 +128,7 @@ div.card {
     
 }
 #main-content {
-    padding: 20px;
+    padding: 60px;
     background-color: rgba(0, 0, 0, 0.5);
     min-height: 1000px;
     // margin: 30px;
@@ -176,13 +176,13 @@ div.card {
 .main-btn {
     color: white;
     text-align: center;
-    font: normal bold 24px/70px Lato, serif;
     &:visited {
         color: white;
     }
     &:hover {
+        // font: normal bold 24px/70px Lato, serif;
         text-shadow: 2px 2px #fff;
-        color: #EC7357;
+        color: #ccc;
     }
 }
 .img-center {
@@ -204,4 +204,90 @@ div.card {
 }
 a.white {
     color: white;
+}
+.brit-feathers {
+    background: url(feathers.jpg) no-repeat center top fixed; 
+    background-size: 100%;
+    height: 300px;
+}
+.browns-mom {
+    background: url(browns_mom.jpg) no-repeat center center fixed; 
+    background-size: 100%;
+    height: 300px;
+}
+.badass {
+    animation: bounceIn 2s;
+    // background: url(badass.jpg) no-repeat center top fixed; 
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: 100%;
+    // margin: 30px;
+    // opacity: 50%;
+}
+.image {
+    margin: auto;
+}
+.index-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    // display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    // border: 2px solid #87231C;
+    // border-radius: 100px;
+    color: white;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.8);
+        // font-size: 32px;
+        color: white;
+        // text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+}
+.bounceIn{
+    animation: bounceIn 2s;
+}
+.bounceIn4{
+    animation: bounceIn 4s;
+}
+.bounceIn5{
+    animation: bigShow 5s;
+    
+}
+.bounceIn6{
+    animation: bounceIn 6s;
+}
+.bigShow{
+    // width: 200px;
+    // height: 200px;
+    animation: bigShow 2s;
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bigShow {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
