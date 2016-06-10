@@ -1,7 +1,7 @@
 <div class="col-md-12">
 
     <div class="col-md-8 darkerbox black shadow text-center">
-        <h1 class="big">Brittany Hicks</h1>
+        <h1 id="" class="main-name">Brittany Hicks</h1>
         <h4 class="">Web Developer</h4>
         
         <div class="">
@@ -31,10 +31,12 @@
             <div class="col-md-4">
                 <%= image_tag("camping.png", class: "img-responsive rounded") %>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <%= image_tag("dad_christmas.jpg", class: "img-responsive rounded") %>
             </div>
-            
+            <div class="col-md-6">
+                <%= image_tag("little_dixie.jpg", class: "img-responsive rounded") %>
+            </div>
             
         </div>
         
@@ -45,7 +47,7 @@
         <%= link_to "Stuff I <br> <i class='fa fa-heart-o'>
         </i>&nbsp;<i class='fa fa-heartbeat'>&nbsp;</i><i class='fa fa-heart-o'></i>".html_safe, life_path, class: "btn index-btn bounceIn btn-block text-center"  %>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-12">
         <%= link_to "Web <br> Development".html_safe, web_dev_path, class: "btn index-btn bounceIn btn-block"  %>
         <%= link_to "Tshirt <br> Designs".html_safe, tshirts_path, class: "btn index-btn bounceIn btn-block"  %>
         <%= link_to "Stuff I <br> <i class='fa fa-heart-o'>

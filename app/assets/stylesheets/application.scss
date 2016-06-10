@@ -304,3 +304,27 @@ a.white {
     transform: scale(1);
   }
 }
+.main-name {
+    font-size: 2.5em
+}
+@media screen and (max-width: 50em) {
+    .main-name {
+        font-size:2em;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .main-name {
+        font-size:1.5em;
+    }
+    .index-btn {
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (max-width: 30em) {
+    .main-name {
+        font-size:1.2em;
+    }
+}
