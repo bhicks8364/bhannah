@@ -123,7 +123,7 @@ div.card {
 }
 .darkerbox {
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     padding:8px;
     
 }
@@ -191,6 +191,14 @@ div.card {
 }
 .In-widget {
     width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+.pic300 {
+    max-height: 250px;
+}
+blockquote {
+    background-color: black;
 }
 .school-logo-box {
     height: 100px;
@@ -230,7 +238,7 @@ a.white {
 }
 .index-btn {
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 30px;
+    font-size: 50px;
     // display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -250,6 +258,9 @@ a.white {
 .bounceIn{
     animation: bounceIn 2s;
 }
+.bounceIn-hover:hover{
+    animation: bounceIn 2s;
+}
 .bounceIn4{
     animation: bounceIn 4s;
 }
@@ -260,6 +271,7 @@ a.white {
 .bounceIn6{
     animation: bounceIn 6s;
 }
+
 .bigShow{
     // width: 200px;
     // height: 200px;
