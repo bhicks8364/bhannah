@@ -1,25 +1,13 @@
 <p id="notice"><%= notice %></p>
-<div class="col-md-12 well">
+<div class="col-md-2"></div>
+<div class="col-md-8 darkerbox">
   <h1><%= @post.title %></h1>
-  
- <div class="col-md-12 well lighter">
-    <%= markdownify @post.body %>
+  <div class="col-md-4"></div>
+ <div class="col-md-12 darkerbox">
+    <p class="lead"><%=@post.body %></p>
     <% if @post.source_url.present? %>
-    <%= link_to "Learn More...", @post.source_url, target: "_blank"  %>
+    <%= link_to "Learn More...", @post.source_url, target: "_blank", class: "big"  %>
     <% else %>
     <% end %>
  </div>
-  
-  <p>
-    <strong>Published at:</strong>
-    <%= @post.published_at %>
-  </p>
-  
-  <p>
-    <strong>State:</strong>
-    <%= @post.state %>
-  </p>
-  
-  <%= link_to 'Edit', edit_blog_post_path(@post) %> |
-  <%= link_to 'Back', blog_posts_path %>
 </div>
