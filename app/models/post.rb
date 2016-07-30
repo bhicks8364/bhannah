@@ -7,12 +7,14 @@
 #  body         :text
 #  published_at :datetime
 #  state        :string
-#  created_at   :datetime         not null
-#  updated_at   :datetime         not null
+#  created_at   :datetime
+#  updated_at   :datetime
 #  source_url   :string
+#  category_id  :integer
 #
 
 class Post < ActiveRecord::Base
+    belongs_to :category
     before_save :set_state
     scope :published, -> { where.not(published_at: nil) }
     def set_state

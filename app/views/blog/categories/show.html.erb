@@ -1,0 +1,16 @@
+
+<h1>
+  <strong>Name:</strong>
+  <%= @category.name %>
+</h1>
+
+<p>
+  <strong>Featured:</strong>
+  <%= @category.featured %>
+</p>
+
+<h2>Post Count: <%= @category.posts.count %></h2>
+<h1><%= link_to "New Post", new_blog_category_post_path(@category) %></h1>
+<%= link_to 'Edit', edit_blog_category_path(@category) %> |
+<%= link_to 'Back', blog_categories_path %> |
+<%= link_to 'Destroy', blog_category_path(@category), method: :delete, data: { confirm: 'Are you sure?' } %>

@@ -1,8 +1,8 @@
 
 
 <div class="well">
-    <h1>New Post</h1>
+    <h1>New Post | Category: <%= @category.name %></h1>
     <%= render 'form', post: @post %>
 </div>
 
-<%= link_to 'Back', blog_posts_path %>
+<%= link_to 'Back', blog_category_posts_path %>

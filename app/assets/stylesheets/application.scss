@@ -130,9 +130,13 @@ div.card {
 }
 #main-content {
     padding: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     min-height: 1000px;
     // margin: 30px;
+}
+#resume-btn {
+    height: 200px;
 }
 .big {
     font-size: 3em;
@@ -191,8 +195,8 @@ div.card {
     margin:auto;
 }
 .In-widget {
-    width: 200px;
-    margin: auto;
+    max-width: 200px;
+    margin: 20px;
     margin-top: 20px;
 }
 .pic300 {
@@ -243,7 +247,7 @@ a.white {
     // display: table-cell;
     vertical-align: middle;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin-top: 20px;
     margin-bottom: 30px;
     // border: 2px solid #87231C;
@@ -304,9 +308,7 @@ a.white {
     transform: scale(1);
   }
 }
-.main-name {
-    font-size: 2.5em
-}
+
 @media screen and (max-width: 50em) {
     .main-name {
         font-size:2em;

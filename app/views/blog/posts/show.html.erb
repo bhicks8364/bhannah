@@ -1,13 +1,13 @@
-<p id="notice"><%= notice %></p>
-<div class="col-md-2"></div>
-<div class="col-md-8 darkerbox">
-  <h1><%= @post.title %></h1>
-  <div class="col-md-4"></div>
- <div class="col-md-12 darkerbox">
-    <p class="lead"><%=@post.body %></p>
-    <% if @post.source_url.present? %>
-    <%= link_to "Learn More...", @post.source_url, target: "_blank", class: "big pull-right"  %>
-    <% else %>
-    <% end %>
- </div>
+<div class="col-md-12 darkerbox shadow">
+  <div class="col-md-12">
+    <h1><%= @post.title %></h1>
+    <div class="col-md-4"></div>
+   <div class="col-md-12">
+      <div class=""><%= markdownify @post.body %></div>
+      <% if @post.source_url.present? %>
+      <%= link_to "Learn More...", @post.source_url, target: "_blank", class: "btn index-btn bounceIn btn-lg btn-block pull-right"  %>
+      <% else %>
+      <% end %>
+   </div>
+  </div>
 </div>

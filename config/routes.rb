@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root 'main#index'
   namespace 'blog' do
-    resources :posts
+    resources :categories do
+        resources :posts
+    end
   end
   get 'portfolio' => 'portfolio#index'
   get 'tshirts' => 'portfolio#tshirts'

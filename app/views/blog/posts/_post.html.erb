@@ -1,9 +1,7 @@
-<div class="post darkbox">
-  <%= link_to blog_post_path(post, class: "") do %>
-    <%= post.title %>
-    <div class=""><%= truncate(post.body, length: 50) { link_to "Continue", blog_post_path(post) } %>
+<div class=" darkbox">
+   <h3> <%= link_to post.title, blog_category_post_path(post.category, post) %></h3>
+    <div class="">
       <p><%= time_ago_in_words post.published_at %></p>
-      <%= link_to 'Destroy', blog_post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Destroy', blog_category_post_path(post.category, post), method: :delete, data: { confirm: 'Are you sure?' } %>
     </div>
-  <%end %>
 </div>

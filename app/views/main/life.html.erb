@@ -1,8 +1,13 @@
 <div class="row darkerbox shadow">
-    <div class="col-md-8">
+    <div class="col-md-7">
          <h1>Music <3</h1>
         <hr>
-        <h4>Inspiring</h4>
+        <div class="col-md-6">
+            <h2>Like My Mother Does <3</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <%= embed("https://www.youtube.com/watch?v=tztTfoqDiBg") %>
+            </div>
+        </div>
         <div class="col-md-6">
             <h2>Fight Like A Girl</h2>
             <div class="embed-responsive embed-responsive-16by9">
@@ -35,24 +40,25 @@
         </div>
         <div class="col-md-6">
             <h2>The Waitress Song</h2>
-a            <div class="embed-responsive embed-responsive-16by9">
-                <%= embed("https://youtu.be/Jbxsks0EvCc?list=PLGyqIulv1Jm-oJ408Zo0qBTD7hKkfjer4") %>
+            <div class="embed-responsive embed-responsive-16by9">
+                <%= embed("https://youtu.be/Jbxsks0EvCc") %>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>Shut Up & Fish!</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <%= embed("https://www.youtube.com/watch?v=-lH54eA4i8s") %>
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-5">
         <h1>Quotes <3</h1>
             <hr>
-        <div class="col-md-8">
-            <%= image_tag("Janis-Joplin.jpg", class: "img-responsive rounded") %>
-        </div>
-    <div class="col-md-12">
+        <%= image_tag("Janis-Joplin.jpg", class: "img-responsive rounded") %>
+        <%= image_tag("life-quote-pursuit-happiness-dream.jpg", class: "img-responsive rounded") %>
         <h1>Inspiration <3</h1>
             <hr>
-        <%= image_tag("badass.jpg", class: "img-responsive") %>
-    </div>
-    <div class="col-md-8">
+        <%= image_tag("badass.jpg", class: "img-responsive rounded") %>
         <%= image_tag("life-quote-pursuit-happiness-dream.jpg", class: "img-responsive rounded") %>
     </div>
-            
 </div>

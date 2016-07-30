@@ -1,56 +1,21 @@
 <div class="col-md-12">
 
-    <div class="col-md-8 darkerbox black shadow text-center">
+    <div class="col-md-6 black text-center">
         <h1 id="" class="main-name">Brittany Hicks</h1>
         <h4 class="">Web Developer</h4>
         
         <div class="">
             <div class="text-center">
-                <%= link_to "View Resume", resume_path, class: "btn index-btn bounceIn btn-block"  %>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="col-md-4">
                 <%= image_tag("feathers.jpg", class: "img-responsive rounded") %>
             </div>
-            <div class="col-md-4">
-                <%= image_tag("browns_mom.jpg", class: "img-responsive rounded") %>
-            </div>
-            <div class="col-md-4">
-                <%= image_tag("scared_camping.jpg", class: "img-responsive rounded") %>
-            </div>
-        <hr>
-            <div class="col-md-8">
-                <%= image_tag("family-collage.jpg", class: "img-responsive rounded") %>
-            </div>
-            
-            <div class="col-md-4">
-                <%= image_tag("bridge_halloween2.png", class: "img-responsive rounded") %>
-            </div>
-            
-            <div class="col-md-4">
-                <%= image_tag("camping.png", class: "img-responsive rounded") %>
-            </div>
-            <div class="col-md-6">
-                <%= image_tag("dad_christmas.jpg", class: "img-responsive rounded") %>
-            </div>
-            <div class="col-md-6">
-                <%= image_tag("little_dixie.jpg", class: "img-responsive rounded") %>
-            </div>
-            
         </div>
         
+        
     </div>
-    <div class="col-md-4 pad">
-        <%= link_to "Web <br> Development".html_safe, web_dev_path, class: "btn index-btn bounceIn btn-lg btn-block"  %>
-        <%= link_to "Tshirt <br> Designs".html_safe, tshirts_path, class: "btn index-btn bounceIn btn-block"  %>
-        <%= link_to "Stuff I <br> <i class='fa fa-heart-o'>
-        </i>&nbsp;<i class='fa fa-heartbeat'>&nbsp;</i><i class='fa fa-heart-o'></i>".html_safe, life_path, class: "btn index-btn bounceIn btn-block text-center"  %>
+    <div class="col-md-6 pad text-center">
+       <%= link_to " &nbsp;<i class='fa fa-folder-open'></i>&nbsp; View Resume".html_safe, resume_path, class: "btn index-btn bounceIn btn-block rounded" %>
+       <%= link_to "<i class='fa fa-tv'></i>&nbsp; Web Development".html_safe, web_dev_path, class: "btn index-btn bounceIn btn-lg btn-lg rounded"  %>
+        <%= link_to "<i class='fa fa-pencil'></i>&nbsp; Graphic Design".html_safe, tshirts_path, class: "btn index-btn bounceIn btn-lg rounded"  %>
     </div>
-    <div class="col-md-12">
-        <%= link_to "Web <br> Development".html_safe, web_dev_path, class: "btn index-btn bounceIn btn-block"  %>
-        <%= link_to "Tshirt <br> Designs".html_safe, tshirts_path, class: "btn index-btn bounceIn btn-block"  %>
-        <%= link_to "Stuff I <br> <i class='fa fa-heart-o'>
-        </i>&nbsp;<i class='fa fa-heartbeat'>&nbsp;</i><i class='fa fa-heart-o'></i>".html_safe, life_path, class: "btn index-btn bounceIn btn-block text-center"  %>
-    </div>
+
 </div>

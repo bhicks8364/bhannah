@@ -7,9 +7,10 @@
 #  body         :text
 #  published_at :datetime
 #  state        :string
-#  created_at   :datetime         not null
-#  updated_at   :datetime         not null
+#  created_at   :datetime
+#  updated_at   :datetime
 #  source_url   :string
+#  category_id  :integer
 #
 
 require 'test_helper'

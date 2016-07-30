@@ -25,11 +25,11 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li class="<%= params[:action] == "web_dev" ? "active" : "" %> nav-link"><%= link_to "Web Development", web_dev_path %></li>
-            <li class="<%= params[:action] == "tshirts" ? "active" : "" %> nav-link"><%= link_to "T-Shirt Design", tshirts_path %></li>
+            <li class="<%= params[:action] == "tshirts" ? "active" : "" %> nav-link"><%= link_to "Graphic Design", tshirts_path %></li>
           </ul>
         </li>
         <% if @posts.present? %>
-        <li class="<%= params[:action] == "blog" ? "active" : "" %> nav-link"><%= link_to "Blog", blog_posts_path %></li>
+        <li class="<%= params[:action] == "blog" ? "active" : "" %> nav-link"><%= link_to "Blog", blog_categories_path %></li>
         <% end %>
         <li class="<%= params[:action] == "contact" ? "active" : "" %> nav-link"><%= link_to "Contact", contact_path %></li>
         

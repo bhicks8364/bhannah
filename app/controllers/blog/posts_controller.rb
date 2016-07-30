@@ -4,7 +4,8 @@ class Blog::PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @category = Category.find(params[:category_id])
+    @post = @category.posts.all
   end
 
   # GET /posts/1
@@ -14,7 +15,8 @@ class Blog::PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = Post.new
+    @category = Category.find(params[:category_id])
+    @post = @category.posts.new
   end
 
   # GET /posts/1/edit
@@ -24,11 +26,11 @@ class Blog::PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
-
+    @category = Category.find(params[:category_id])
+    @post = @category.posts.new(post_params)
     respond_to do |format|
       if @post.save
-        format.html { redirect_to blog_post_path(@post), notice: 'Post was successfully created.' }
+        format.html { redirect_to blog_category_post_path(@category, @post), notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }
@@ -42,7 +44,7 @@ class Blog::PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to blog_post_path(@post), notice: 'Post was successfully updated.' }
+        format.html { redirect_to blog_category_post_path(@post), notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit }
@@ -56,7 +58,7 @@ class Blog::PostsController < ApplicationController
   def destroy
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to blog_posts_url, notice: 'Post was successfully destroyed.' }
+      format.html { redirect_to blog_category_path, notice: 'Post was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -64,11 +66,13 @@ class Blog::PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.find(params[:id])
+      @category = Category.find(params[:category_id])
+      @post = @category.posts.find(params[:id])
+      # @post = Post.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :body, :published_at, :state, :source_url)
+      params.require(:post).permit(:title, :body, :published_at, :state, :source_url, :category_id)
     end
 end
