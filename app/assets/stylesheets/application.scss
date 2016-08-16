@@ -324,9 +324,16 @@ a.white {
     }
 }
 
+.img600 {
+    height: 250px;
+}
 
 @media screen and (max-width: 30em) {
     .main-name {
         font-size:1.2em;
     }
+        .img600 {
+        max-height: 200px;
+    }
 }
+

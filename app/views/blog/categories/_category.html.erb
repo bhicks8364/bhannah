@@ -1,0 +1,10 @@
+<div class="well">
+    <h3><%= category.name %></h3>
+<ul>
+    <% category.posts.published.each do |post| %>
+        <li><%= link_to post.title, blog_category_post_path(category, post) %></li>
+    <% end %>
+</ul>
+
+<%= link_to "NEW POST", new_blog_category_post_path(category) if me? %>
+</div>

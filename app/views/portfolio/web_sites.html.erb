@@ -1,20 +1,25 @@
 <div class="col-md-12">
     <h1 class="text-center white bold">Web Development</h1>
     <hr>
-    <div class="col-md-6 darkbox">
+    <div class="col-md-4 darkbox">
         <h2 class="bold white">
         <%= link_to "http://www.inclustaff.com", class: "white", target: "_blank" do %>
         IncluStaff 
         <% end %>
         </h2>
-         <%= render "main/web_slideshow" %>
+         <%= image_tag("inclustaff/inclustaff1.png", class: "img-responsive img600") %>
     </div>
-    <div class="col-md-6 darkbox">
+    <div class="col-md-4 darkbox">
          <h2 class="bold">
-        <%= link_to "http://www.inclustaff.com", class: "white", target: "_blank" do %>
+        <%= link_to "http://www.kattracker.com", class: "white", target: "_blank" do %>
         KatTracker 
         <% end %>
         </h2>
-        <%= image_tag("kattracker1.png", class: "img-responsive ") %>
+        <%= image_tag("kattracker1.png", class: "img-responsive img600") %>
+    </div>
+    <div class="col-md-4 darkbox">
+        <h2 class="bold">Commissions Calculator</h2>
+        <%= image_tag("commissions1.png", class: "img-responsive img600") %>
+        
     </div>
 </div>

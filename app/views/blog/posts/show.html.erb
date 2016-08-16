@@ -1,13 +1,14 @@
 <div class="col-md-12 darkerbox shadow">
+  <%= link_to "Back", blog_category_path(@category), class: "btn btn-default" %>
   <div class="col-md-12">
     <h1><%= @post.title %></h1>
-    <div class="col-md-4"></div>
-   <div class="col-md-12">
-      <div class=""><%= markdownify @post.body %></div>
-      <% if @post.source_url.present? %>
-      <%= link_to "Learn More...", @post.source_url, target: "_blank", class: "btn index-btn bounceIn btn-lg btn-block pull-right"  %>
-      <% else %>
-      <% end %>
-   </div>
+    <div class="col-md-12 post-body">
+      <%= markdownify @post.body %>
+    </div>
+    <% if @post.source_url.present? %>
+    <%= link_to "Learn More...", @post.source_url, target: "_blank", class: "btn index-btn bounceIn btn-lg btn-block pull-right"  %>
+    <% else %>
+    <% end %>
   </div>
+  <%= link_to "DELETE", blog_category_post_path(@post.category, @post), method: :delete, class: "btn btn-danger" if me? %>
 </div>

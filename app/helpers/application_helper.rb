@@ -20,4 +20,8 @@ module ApplicationHelper
         youtube_id = youtube_url.split("=").last
         content_tag(:iframe, nil, src: "//www.youtube.com/embed/#{youtube_id}", class: "embed-responsive-item")
     end
+    
+    def me?
+        request.ip == "174.100.58.236"
+    end
 end
